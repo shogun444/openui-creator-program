@@ -164,7 +164,7 @@ When Test Connection fires, the mutation runs and the UI updates. The model is n
 
 The GIF below shows a resumable onboarding workflow. Progress, completed steps, and form values persist across sessions, allowing users to continue from where they left off rather than restarting from the beginning.
 
-![Resumable onboarding flow showing persistent state with completed steps and pre-filled form fields from a previous session](../assetsForArticle5/Birthday-ezgif.com-speed.gif)
+![Resumable onboarding flow showing persistent state with completed steps and pre-filled form fields from a previous session](../assetsForArticle5/Onboarding.gif)
 
 This falls out of the architecture instead of being a feature bolted on top. UI state is managed in the renderer rather than reconstructed from chat history on every turn, so it can be stored, restored, and shared. Collaborative setup flows become possible. One team member completes the environment step, another continues from the database step. The interface holds the state, not a private conversation thread.
 
